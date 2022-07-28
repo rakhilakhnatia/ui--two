@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;500&display=swap');
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+/***************assets************************/
+
+:root{
+    --color-primary:#f2f2f2;
+    --color-secondary:#e28525;
+    --color-lightblue: #016972;
+    --color-lightgreen: #00403f; 
+    --color-button : #f2f2f2;
+    --font-shoulder:'Big Shoulders Display', cursive;
+    --font-lexend:'Lexend Deca', sans-serif;
+}
+body{
+    background-color:var(--color-primary);
+}
+.container {
+    width: 85%;
+    padding: 85px 0px 70px 0px;
+    margin: 0 auto;
+    max-width: 360px;
+    position: relative;
+}
+.main {
+    border-radius: 9px;
+    padding: 50px 45px 50px 45px;
+    color: var(--color-button);
+}
+.main a {
+    text-decoration: none;
+    border-radius: 30px;
+    background-color: var(--color-button);
+    padding: 15px 35px 15px 35px;
+    font-family: var(--font-lexend);
+}
+.main h1 {
+    font-weight: 400;
+    line-height: 2;
+    font-size: 48px;
+    font-family: var(--font-shoulder);
+}
+.main p {
+    padding: 0px 0px 45px 0px;
+    line-height: 1.5;
+    font-family: var(--font-lexend);
+/*********************sedans************************/
+}
+.sedans {
+    border-radius: 8px 8px 0px 0px;
+    background-color: var(--color-secondary);
+}
+.sedans a {
+   color: var(--color-secondary);
+}
+.sedans p{
+    color: #ffe1af;
+}
+/*******************suvs***************************/
+
+.suvs{
+    background-color: var(--color-lightblue);
+}
+.suvs a {
+   color: var(--color-lightblue);
+}
+.suvs p{
+color:#aae9ed;
+}
+/******************luxury**************************/
+
+.luxury {
+    border-radius: 0px 0px 8px 8px;
+    background-color: var(--color-lightgreen);
+}
+.luxury a{
+   color: var(--color-lightgreen);
+}
+.luxury p{
+    color:#b1d2d4;
+}
+/********************media query**********************/
+@media (min-width:900px){  
+    .container {
+        display: flex;
+        width: 80%;
+        max-width: 900px;
+    }
+    .main {
+        padding: 50px 29px 50px 29px;
+    }
+.sedans {
+    border-radius: 8px 0px 0px 8px;
+}
+.luxury {
+    border-radius: 0px 8px 8px 0px;
+}
+.main p {
+    padding: 0px 0px 100px 0px;
+}
+.suvs a, .sedans a, .luxury a {
+    position: absolute;
+    bottom: 100px;
+}
+}
